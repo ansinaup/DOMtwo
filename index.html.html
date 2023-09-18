@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="frame">
+        <div class="div">
+        <div class="">
+            <h1>DOM Manipulation</h1>
+            <button id="btn">Change image src</button>
+        </div>
+        <div class="img">
+            <img src="https://img.freepik.com/free-photo/blossom-floral-bouquet-decoration-colorful-beautiful-flowers-background-garden-flowers-plant-pattern-wallpapers-greeting-cards-postcards-design-wedding-invites_90220-1103.jpg?w=2000" alt="" id="image">
+        </div>
+        </div>
+    </div>
+
+
+    <script>
+        document.getElementById("btn")
+        console.log( document.getElementById("btn"))
+        let btn= document.getElementById("btn");
+
+        document.getElementById("img")
+        console.log( document.getElementById("img"))
+        let img= document.getElementById("img");
+
+        btn.addEventListener('click', function(params){
+        image.src="https://img.freepik.com/premium-photo/enchanted-flowers-magical-floral-background-generated-ai_608997-1134.jpg?w=360"
+
+        } )
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
+<style>
+    .frame{
+        background-color: rgba(250, 114, 196, 0.91);
+        height: 100vh;
+    }
+    #image{
+        width: 400px;
+        height: 320px;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+    .div{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 100px;
+    }
+    #btn{
+        border: dotted;
+        padding: 10px 14px;
+        background-color: black;
+        color: white;
+    }
+</style>
